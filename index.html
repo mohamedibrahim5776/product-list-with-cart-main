@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="container">
+<div class="container content row">
+  <section class="row col-9 row-cols-1">
+    <h1 class="col-12">Desserts</h1>
+    
+      <div class="card col" >
+        <img src="assets/images/image-waffle-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Waffle</p>
+          <h5 class="card-title">Waffle with Berries</h5>
+          <p class="price">$6.50</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col" >
+        <img src="assets/images/image-creme-brulee-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Crème Brûlée</p>
+          <h5 class="card-title">Vanilla Bean Crème Brûlée</h5>
+          <p class="price">$7.00</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col" >
+        <img src="assets/images/image-tiramisu-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Tiramisu</p>
+          <h5 class="card-title">Classic Tiramisu</h5>
+          <p class="price">$5.50</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col" >
+        <img src="assets/images/image-baklava-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Baklava</p>
+          <h5 class="card-title">Pistachio Baklava</h5>
+          <p class="price">$4.00</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col" >
+        <img src="assets/images/image-meringue-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Pie</p>
+          <h5 class="card-title">Lemon Meringue Pie</h5>
+          <p class="price">$5.00</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col" >
+        <img src="assets/images/image-cake-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Cake</p>
+          <h5 class="card-title">Red Velvet Cake</h5>
+          <p class="price">$4.50</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col" >
+        <img src="assets/images/image-brownie-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Brownie</p>
+          <h5 class="card-title">Salted Caramel Brownie</h5>
+          <p class="price">$4.50</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col" >
+        <img src="assets/images/image-panna-cotta-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Panna Cotta</p>
+          <h5 class="card-title">Vanilla Panna Cotta</h5>
+          <p class="price">$6.50</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+      <div class="card col">
+        <img src="assets/images/image-creme-brulee-desktop.jpg" class="card-img-top" alt="waffle">
+        <div class="card-body">
+          <p class="card-text">Crème Brûlée</p>
+          <h5 class="card-title">Vanilla Bean Crème Brûlé</h5>
+          <p class="price">$7.00</p>
+          <button onclick="" class="btn 0 btn-outline-danger">
+            <div class="add-card show">
+              <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+            </div>
+            <div class="count hide"><i class="fa-solid fa-circle-minus"></i> <span class="zero">0</span>  <i class="fa-solid fa-circle-plus"></i></div>
+          </button>
+        </div>
+      </div>
+  </section>
+  <aside class=" col-3" >
+    <h3>Your Cart ( 
+      <span class="value">0</span> 
+    )</h3>
+    <div class="empty">
+      <div class="image">
+        <img src="assets/images/illustration-empty-cart.svg" class="" alt="">
+      </div>
+      <div>Your added items will appear here</div>
+    </div>
+    <div class="receipt hide">
+      <div class="container">
+        <div class="order d-flex justify-content-between align-items-center">
+          <img src="assets/images/image-waffle-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Waffle with Berries</div>
+            <span class="number" >
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">6.50</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+          <img src="assets/images/image-creme-brulee-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Vanilla Bean Crème Brûlée</div>
+            <span class="number" >
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">7.00</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+          <img src="assets/images/image-tiramisu-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Classic Tiramisu</div>
+            <span class="number" >
+              <span class="num">2</span>
+              ×</span>
+            $<span class="price-order">5.50</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+            <img src="assets/images/image-baklava-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Pistachio Baklava</div>
+            <span class="number" >
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">4.00</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+            <img src="assets/images/image-meringue-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Lemon Meringue Pie</div>
+            <span class="number" >
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">5.00</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+            <img src="assets/images/image-cake-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Red Velvet Cake</div>
+            <span class="number" >
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">4.50</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+            <img src="assets/images/image-brownie-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Salted Caramel Brownie</div>
+            <span class="number" >
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">4.50</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+            <img src="assets/images/image-panna-cotta-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Vanilla Panna Cotta</div>
+            <span class="number" >
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">6.50</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order d-flex justify-content-between align-items-center">
+            <img src="assets/images/image-creme-brulee-thumbnail.jpg" width="50px" height="50px">
+          <div class="text">
+            <div class="title">Vanilla Bean Crème Brûlé</div>
+            <span class="number">
+              <span class="num">0</span>
+              ×</span>
+            $<span class="price-order">7.00</span>
+            $<span class="total-price">0</span>
+          </div>
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="order-total d-flex justify-content-between">
+          <div class="text">order total</div>
+          $<div class="order-total-price">0</div>
+        </div>
+        <button class="btn btn-danger">confirm order</button>
+      </div>
+    </div>
+    <div class="receipt_final"></div>
+    <div class="wallpaper"></div>
+  </aside>
+  
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a >Your Name Here</a>.
+  </div>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
