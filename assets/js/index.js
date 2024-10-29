@@ -92,7 +92,7 @@ minus.map( function ( e )
             this.parentElement.children[ 1 ].innerHTML--;
             title.map( ( e, i ) =>
             {
-                if ( this.parentElement.parentElement.parentElement.children[ 1 ].innerHTML === e.innerText )
+                if ( this.parentElement.parentElement.parentElement.children[ 1 ].innerText == e.innerText )
                 {
                     e.parentElement.children[ 1 ].children[ 0 ].innerHTML = 0;
                     e.parentElement.children[ 1 ].children[ 0 ].innerHTML = ( +this.parentElement.children[ 1 ].innerHTML ) - ( +e.parentElement.children[ 1 ].children[ 0 ].innerHTML );
