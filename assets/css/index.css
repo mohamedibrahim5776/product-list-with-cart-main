@@ -132,6 +132,9 @@ body.container {
         aside {
         width: 100% !important;
     }
+    .card-body button * {
+        padding: 0 4px;
+    }
 }
 @media (min-width:992px)  {
     section.row div.card {
